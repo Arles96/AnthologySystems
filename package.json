@@ -4,7 +4,9 @@
   "description": "Pagina web para promover nuestros proyectos",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "restart" : "supervisor server.js"
   },
   "repository": {
     "type": "git",
@@ -21,5 +23,13 @@
   "bugs": {
     "url": "https://github.com/Arles96/AnthologySystems/issues"
   },
-  "homepage": "https://github.com/Arles96/AnthologySystems#readme"
+  "homepage": "https://github.com/Arles96/AnthologySystems#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "jade": "^1.11.0",
+    "morgan": "^1.9.0",
+    "mysql": "^2.15.0",
+    "serve-favicon": "^2.4.5"
+  }
 }
