@@ -76,7 +76,7 @@ CREATE TABLE IF NOT EXISTS groupProyect (
   description VARCHAR(255),
   img VARCHAR(255) UNIQUE,
   MyDate DATE,
-  url VARCHAR(255),
+  url VARCHAR(255)
 );
 
 /* Esta tabla infoUserProyect contendra cuales usuarios participaron en un proyecto grupal*/
