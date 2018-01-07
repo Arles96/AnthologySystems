@@ -25,7 +25,7 @@ UserModel.insert = (data, cb) => {
 }
 
 UserModel.update = (data, cb) => {
-  conn.query('UPDATE users SET ? username = ?', [data, data.username], cb)
+  conn.query('UPDATE users SET ? WHERE username = ?', [data, data.username], cb)
 }
 
 UserModel.delete = (username, cb) => {

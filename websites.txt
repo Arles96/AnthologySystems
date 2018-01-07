@@ -1,3 +1,10 @@
 https://www.w3schools.com/w3css/tryw3css_templates_cv.htm
-
+    
 https://www.w3schools.com/w3css/tryw3css_templates_portfolio.htm
+
+//Insertar en sql
+
+INSERT INTO `users` (`username`, `password`, `image`, `completeName`, `email`, `career`) VALUES ('Arles96', 'HolaMundo', 'http', 'Arles Aulio Cerrato Maldonado', 'arles.cerrato@gmail.com', 'Ingeniero en Sistemas');
+
+
+INSERT INTO `skills` (`id`, `title`, `percentage`, `username`) VALUES (NULL, 'Java', '100', 'Arles96');
