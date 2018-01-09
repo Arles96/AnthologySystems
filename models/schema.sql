@@ -87,6 +87,7 @@ CREATE TABLE IF NOT EXISTS groupProyect (
 /* Esta tabla infoUserProyect contendra cuales usuarios participaron en un proyecto grupal*/
 
 CREATE TABLE IF NOT EXISTS infoUserProyect (
+  id INT AUTO_INCREMENT PRIMARY KEY,
   titleProyect VARCHAR(255),
   username VARCHAR(255),
   FOREIGN KEY (titleProyect) REFERENCES groupProyect(title),
