@@ -21,7 +21,7 @@ CREATE TABLE IF NOT EXISTS users (
 /* Esta tabla de languages contendra los lenguajes que saben los usuarios */
 
 CREATE TABLE IF NOT EXISTS languages (
-  id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  id INT AUTO_INCREMENT PRIMARY KEY,
   language VARCHAR(70),
   percentage INT,
   username VARCHAR(255),
@@ -31,7 +31,7 @@ CREATE TABLE IF NOT EXISTS languages (
 /* Esta tabla de education contendra los datos de la educacion de los usuarios */
 
 CREATE TABLE IF NOT EXISTS education (
-  id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  id INT AUTO_INCREMENT PRIMARY KEY,
   institute VARCHAR(255),
   description VARCHAR(255),
   certificate VARCHAR(255) UNIQUE,
@@ -43,7 +43,7 @@ CREATE TABLE IF NOT EXISTS education (
 /* Esta tabla de skills contendra las habilidades de los usuarios */
 
 CREATE TABLE IF NOT EXISTS skills (
-  id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  id INT AUTO_INCREMENT PRIMARY KEY,
   title VARCHAR(255),
   percentage INT,
   username VARCHAR(255),
@@ -53,7 +53,7 @@ CREATE TABLE IF NOT EXISTS skills (
 /* Esta tabla de workExperience contendra las expreciencia de trabajos de los usuarios */
 
 CREATE TABLE IF NOT EXISTS workExperience(
-  id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  id INT AUTO_INCREMENT PRIMARY KEY,
   company VARCHAR(255),
   ocupation VARCHAR(90),
   MyDate DATE,
@@ -64,7 +64,7 @@ CREATE TABLE IF NOT EXISTS workExperience(
 /* Esta tabla de singleProyect contendra los proyectos individuales hechos por los usuarios */
 
 CREATE TABLE IF NOT EXISTS singleProyect (
-  id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  id INT AUTO_INCREMENT PRIMARY KEY,
   title VARCHAR(255),
   description VARCHAR(255),
   img VARCHAR(255) UNIQUE,
